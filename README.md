@@ -16,12 +16,12 @@ The project uses the [Climate Change Impact on Agriculture](https://www.kaggle.c
 ## Repository Structure
 
 ```
-├── climate_change_impact_on_agriculture_2024.csv       # Dataset for clustering analysis
+├── climate_change_impact_on_agriculture_2024.csv    # Dataset for clustering analysis
 ├── climate_agriculture_clustered_optimized.csv      # Dataset for classification analysis
-├── [Clustering]_Submission_Akhir_BMLP_Zidan_Mubarak_(Updated).ipynb    # Python notebook with clustering implementation
-├── [Klasifikasi]_Submission_Akhir_BMLP_Zidan_Mubarak.ipynb   # Python notebook with classification implementation
-├── README.md                    # Project documentation
-├── requirements.txt             # Required Python packages
+├── [Clustering]_Submission_Akhir.ipynb              # Python notebook with clustering implementation
+├── [Klasifikasi]_Submission_Akhir.ipynb             # Python notebook with classification implementation
+├── README.md                                        # Project documentation
+├── requirements.txt                                 # Required Python packages
 ```
 
 ## Implementation Details
