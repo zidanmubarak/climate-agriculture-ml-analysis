@@ -45,8 +45,8 @@ The project uses the [Climate Change Impact on Agriculture](https://www.kaggle.c
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/zidanmubarak/climate-agriculture-ml.git
-cd climate-agriculture-ml
+git clone https://github.com/zidanmubarak/climate-agriculture-ml-analysis.git
+cd climate-agriculture-ml-analysis
 ```
 
 2. Install the required packages:
