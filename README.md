@@ -1,75 +1,107 @@
-# Machine Learning Project: Climate Change Impact on Agriculture
+# Analisis Dampak Perubahan Iklim terhadap Pertanian menggunakan Machine Learning
 
-This repository contains the final submission project for the Dicoding Machine Learning for Beginners class, sponsored by DBS Foundation. The project explores the impact of climate change on agriculture using machine learning techniques for both clustering and classification.
+Repositori ini berisi proyek akhir untuk kelas Machine Learning Pemula Dicoding yang disponsori oleh DBS Foundation. Proyek ini mengeksplorasi dampak perubahan iklim terhadap sektor pertanian menggunakan teknik machine learning untuk clustering dan klasifikasi.
 
-## Project Overview
+## Gambaran Proyek
 
-In this project, I applied machine learning techniques to analyze climate change effects on agricultural data. The project consists of two main components:
+Dalam proyek ini, saya menerapkan teknik machine learning untuk menganalisis efek perubahan iklim pada data pertanian. Proyek ini terdiri dari dua komponen utama:
 
-1. **Clustering Analysis**: Identifying natural groupings in agricultural climate data to reveal patterns and relationships.
-2. **Classification Analysis**: Predicting specific agricultural outcomes based on climate variables.
+1. **Analisis Clustering**: Mengidentifikasi pengelompokan alami dalam data iklim pertanian untuk mengungkap pola dan hubungan.
+2. **Analisis Klasifikasi**: Memprediksi hasil pertanian spesifik berdasarkan variabel iklim.
 
 ## Dataset
 
-The project uses the [Climate Change Impact on Agriculture](https://www.kaggle.com/datasets/waqi786/climate-change-impact-on-agriculture) dataset from Kaggle, which contains various climate and agricultural metrics across different regions and time periods.
+Proyek ini menggunakan dataset [Climate Change Impact on Agriculture](https://www.kaggle.com/datasets/waqi786/climate-change-impact-on-agriculture) dari Kaggle, yang berisi berbagai metrik iklim dan pertanian di berbagai wilayah dan periode waktu.
 
-## Repository Structure
+## Struktur Repositori
 
 ```
-├── climate_change_impact_on_agriculture_2024.csv    # Dataset for clustering analysis
-├── climate_agriculture_clustered_optimized.csv      # Dataset for classification analysis
-├── [Clustering]_Submission_Akhir.ipynb              # Python notebook with clustering implementation
-├── [Klasifikasi]_Submission_Akhir.ipynb             # Python notebook with classification implementation
-├── README.md                                        # Project documentation
-├── requirements.txt                                 # Required Python packages
+├── climate_change_impact_on_agriculture_2024.csv    # Dataset untuk analisis clustering
+├── climate_agriculture_clustered_optimized.csv      # Dataset untuk analisis klasifikasi
+├── [Clustering].ipynb                               # Notebook implementasi clustering
+├── [Klasifikasi].ipynb                              # Notebook implementasi klasifikasi
+├── README.md                                        # Dokumentasi proyek
+├── requirements.txt                                 # Paket Python yang diperlukan
 ```
 
-## Implementation Details
+## Detail Implementasi
 
-### Clustering Analysis
-- Implemented unsupervised learning to identify natural patterns in climate-agriculture data
-- Applied data preprocessing, feature scaling, and dimensionality reduction
-- Used **K-Means clustering algorithm** to group similar data points
-- Performed feature engineering to improve the Silhouette Score
-- Created detailed visualizations of cluster distributions
-- Provided comprehensive interpretation of each identified cluster
+### Analisis Clustering
 
-### Classification Analysis
-- Used the clustering results as the basis for classification models
-- Implemented **Random Forest** and **Gradient Boosting** classifiers
-- Performed hyperparameter tuning on the Gradient Boosting model to optimize performance
-- Compared model performance metrics including accuracy, precision, recall, and F1-score
-- Created confusion matrices to visualize classification results
+- Menerapkan pembelajaran tanpa pengawasan untuk mengidentifikasi pola alami dalam data iklim-pertanian
+- Melakukan pra-pemrosesan data, penskalaan fitur, dan reduksi dimensi
+- Menggunakan algoritma **K-Means clustering** untuk mengelompokkan titik data yang serupa
+- Melakukan rekayasa fitur untuk meningkatkan Silhouette Score
+- Membuat visualisasi detail distribusi cluster
+- Memberikan interpretasi komprehensif untuk setiap cluster yang teridentifikasi
 
-## Installation and Usage
+### Analisis Klasifikasi
 
-1. Clone this repository:
+- Menggunakan hasil clustering sebagai dasar untuk model klasifikasi
+- Menerapkan classifier **Random Forest** dan **Gradient Boosting**
+- Melakukan penyetelan hyperparameter pada model Gradient Boosting untuk mengoptimalkan performa
+- Membandingkan metrik performa model termasuk akurasi, presisi, recall, dan F1-score
+- Membuat matriks kebingungan untuk memvisualisasikan hasil klasifikasi
+
+## Instalasi dan Penggunaan
+
+### Menggunakan Google Colab (Direkomendasikan)
+
+1. Buka [Google Colab](https://colab.research.google.com/)
+2. Upload notebook yang diinginkan ke Google Colab:
+   - `[Clustering].ipynb`
+   - `[Klasifikasi].ipynb`
+3. Upload dataset yang diperlukan:
+   - `climate_change_impact_on_agriculture_2024.csv`
+   - `climate_agriculture_clustered_optimized.csv`
+4. Jalankan notebook secara berurutan
+
+### Menggunakan Local Environment
+
+1. Clone repositori ini:
+
 ```bash
 git clone https://github.com/zidanmubarak/climate-agriculture-ml-analysis.git
 cd climate-agriculture-ml-analysis
 ```
 
-2. Install the required packages:
+2. Buat virtual environment (opsional):
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Untuk Linux/Mac
+# atau
+venv\Scripts\activate  # Untuk Windows
+```
+
+3. Install paket yang diperlukan:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Open and run the notebook files in VSCode:
+4. Buka dan jalankan file notebook di VSCode:
+
 ```bash
 code .
 ```
 
-## Technologies Used
+## Teknologi yang Digunakan
 
-- Python 3.x
-- Pandas for data manipulation
-- Scikit-learn for machine learning algorithms
-- Matplotlib and Seaborn for data visualization
-- Visual Studio Code (VSCode) as the development environment
+- Python 3.10
+- Pandas untuk manipulasi data
+- Scikit-learn untuk algoritma machine learning
+- Matplotlib dan Seaborn untuk visualisasi data
+- Google Colab sebagai platform utama pengembangan
+- Visual Studio Code (VSCode) sebagai alternatif lingkungan pengembangan
 
-## Connect with Me
+## Kontributor
 
-Feel free to connect with me on LinkedIn to discuss this project or other data science topics:
-[My LinkedIn Profile](https://www.linkedin.com/in/zidan-mubarak-87b880283/)
+- Zidan Mubarak
 
-I'm always open to feedback, collaboration opportunities, or just chatting about machine learning and data science!
+## Hubungi Saya
+
+Silakan terhubung dengan saya di LinkedIn untuk mendiskusikan proyek ini atau topik data science lainnya:
+[Profil LinkedIn Saya](https://www.linkedin.com/in/zidan-mubarak)
+
+Saya selalu terbuka untuk masukan, peluang kolaborasi, atau sekadar berdiskusi tentang machine learning dan data science!
